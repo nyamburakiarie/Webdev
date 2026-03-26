@@ -1,100 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Dashboard | Allan & Nyambura</title>
 
     <style>
-        table,
-        th,
-        td {
-            border-width: 2px;
-            border-style: outset;
-            border-color: black;
-        }
-
+      table,
+      th,
+      td {
+        border-width: 2px;
+        border-style: outset;
+        border-color: black;
+      }
+      .heading {
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h2>~Announcements~</h2>
+  <body>
+    <header>
+      <h1 class="heading" id="dashboard">Welcome Nyambura Kiarie!</h1>
+      <h2 class="heading">Student Dashboard</h2>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Grades</a></li>
+      </ul>
+    </aside>
+    <h2 class="heading">~Announcements~</h2>
 
     <p>NOTICE!!NOTICE!!There are some upcoming events in the school.</p>
 
     <!--Announcements table-->
 
     <table>
-        <tr>
-            <th>Title</th>
-            <th>Date</th>
-            <th>Description</th>
-        </tr>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Description</th>
+      </tr>
 
-        <tr>
-            <td>Cybersecurity Hackathons</td>
-            <td>4<sup>th</sup> February, 2026</td>
-            <td>The MMU cyber-security club is being invited for a mini-hackathon + networking session at African
-                Nazarene university.</td>
-        </tr>
+      <tr>
+        <td>Cybersecurity Hackathons</td>
+        <td>4<sup>th</sup> February, 2026</td>
+        <td>
+          The MMU cyber-security club is being invited for a mini-hackathon +
+          networking session at African Nazarene university.
+        </td>
+      </tr>
 
-        <tr>
-            <td>Project Deadline Reminder</td>
-            <td>30<sup>th</sup> February, 2026</td>
-            <td>The Web Development lead,Susan,has requested that the HTML projects to be submitted before March 30.<br>
-                They should include the Github repo link and the deployment link.</td>
-        </tr>
+      <tr>
+        <td>Project Deadline Reminder</td>
+        <td>30<sup>th</sup> February, 2026</td>
+        <td>
+          The Web Development lead,Susan,has requested that the HTML projects to
+          be submitted before March 30.<br />
+          They should include the Github repo link and the deployment link.
+        </td>
+      </tr>
 
-        <tr>
-            <td>Faculty Delegates Elections</td>
-            <td>15<sup>th</sup> February, 2026</td>
-            <td>Students are required to avail themselves to school to vote for the faculty delegates.</td>
-        </tr>
+      <tr>
+        <td>Faculty Delegates Elections</td>
+        <td>15<sup>th</sup> February, 2026</td>
+        <td>
+          Students are required to avail themselves to school to vote for the
+          faculty delegates.
+        </td>
+      </tr>
 
-        <tr>
-            <td>Football tournament</td>
-            <td>23<sup>th</sup> February, 2026</td>
-            <td>Girls from FOCIT be participating in a football tournament aganist girls from FOST at 2.00pm </td>
-        </tr>
+      <tr>
+        <td>Football tournament</td>
+        <td>23<sup>th</sup> February, 2026</td>
+        <td>
+          Girls from FOCIT be participating in a football tournament against
+          girls from FOST at 2.00pm
+        </td>
+      </tr>
     </table>
 
-    <h2>~Upcoming Assignments~</h2>
+    <h2 class="heading">~Upcoming Assignments~</h2>
 
-    <p>The following are <em>upcoming assignments</em> that you are expected to submit on the specified date.</p>
-    <p>Go through the table throughly to ensure you don't forget to complete the assignments and submit on time. </p>
+    <p>
+      The following are <em>upcoming assignments</em> that you are expected to
+      submit on the specified date.
+    </p>
+    <p>
+      Go through the table thoroughly to ensure you don't forget to complete the
+      assignments and submit on time.
+    </p>
     <!--Upcoming Assignment table-->
     <table>
-        <tr>
-            <th>Subject</th>
-            <th>Due Date</th>
-            <th>Status</th>
-        </tr>
+      <tr>
+        <th>Subject</th>
+        <th>Due Date</th>
+        <th>Status</th>
+      </tr>
 
-        <tr>
-            <td>Data Structures and Algorithims</td>
-            <td>12/Jan/2026</td>
-            <td>Overdue</td>
-        </tr>
+      <tr>
+        <td>Data Structures and Algorithims</td>
+        <td>12/Jan/2026</td>
+        <td>Overdue</td>
+      </tr>
 
-        <tr>
-            <td>Electronics</td>
-            <td>15/Jan/2026</td>
-            <td>In progress</td>
-        </tr>
+      <tr>
+        <td>Electronics</td>
+        <td>15/Jan/2026</td>
+        <td>In progress</td>
+      </tr>
 
-        <tr>
-            <td>Probability and Statistics</td>
-            <td>17/Jan/2026</td>
-            <td>Submitted</td>
-        </tr>
+      <tr>
+        <td>Probability and Statistics</td>
+        <td>17/Jan/2026</td>
+        <td>Submitted</td>
+      </tr>
 
-        <tr>
-            <td>Maths For Science</td>
-            <td>20/Jan/2026</td>
-            <td>Not started</td>
-        </tr>
+      <tr>
+        <td>Maths For Science</td>
+        <td>20/Jan/2026</td>
+        <td>Not started</td>
+      </tr>
     </table>
-</body>
 
+    <form action="">
+      <label for="subjects">Choose a subject</label>
+      <select name="assignments" id="subjects">
+        <option value="DSA">Data Structures and Algorithims</option>
+        <option value="Maths">Maths for Science</option>
+        <option value="Probs">Probability and Statistics</option>
+        <option value="Elections">Electronics</option>
+      </select>
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
