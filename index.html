@@ -126,6 +126,7 @@
       </tr>
     </table>
 
+    <h2>Submit Assignment</h2>
     <form action="">
       <label for="subjects">Choose a subject</label>
       <select name="assignments" id="subjects">
@@ -133,7 +134,11 @@
         <option value="Maths">Maths for Science</option>
         <option value="Probs">Probability and Statistics</option>
         <option value="Elections">Electronics</option>
-      </select>
+      </select><br>
+      <label for="assignmentName">Assignment Name: </label><br>
+      <input type="text" id="assignmentName" name="assignmentName"><br>
+      <label for="fileUpload">Upload File</label>
+      <input type="file" id="fileUpload" name="fileUpload"><br>
       <button>Submit</button>
     </form>
   </body>
